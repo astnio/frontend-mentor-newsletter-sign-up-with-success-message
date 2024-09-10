@@ -72,20 +72,44 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-
 	gap: 1.6rem;
 
-	width: 50%;
+	padding: 2rem;
 }
 
 .signup-main-content > h1 {
-	font-size: 3.4rem;
+	font-size: 2.8rem;
 }
 
-/*** Signup Image ***/
+ul {
+	display: flex;
+	flex-direction: column;
+	gap: 0.6rem;
 
-.signup-main-picutre {
-	width: 50%;
+	padding-left: 0;
+
+	/* list-style-image: url('./assets/images/icon-list.svg'); */
+	list-style: none;
+}
+
+li {
+	position: relative;
+	padding-left: 1.8rem;
+}
+
+li::before {
+	content: '';
+	position: absolute;
+
+	background-image: url('./assets/images/icon-list.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+
+	transform: translateX(-1.8rem);
+
+	width: 1rem;
+	height: 1rem;
 }
 
 /*** Form ***/
