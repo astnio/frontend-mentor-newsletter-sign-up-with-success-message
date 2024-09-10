@@ -153,14 +153,18 @@ label {
 	display: none;
 }
 
-#email {
+input#email {
 	border: 1px solid var(--clr-grey);
 	border-radius: 6px;
 	padding: 1rem;
 }
 
-#email:not(:focus):invalid {
-	background-color: rgba(250, 128, 114, 0.365);
+input::placeholder {
+	color: var(--clr-grey);
+}
+
+input:not(:focus):invalid {
+	background-color: rgba(250, 128, 114, 0.3);
 	border-color: var(--clr-tomato);
 	color: var(--clr-tomato);
 }
