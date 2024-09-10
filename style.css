@@ -24,6 +24,22 @@
 	box-sizing: border-box;
 }
 
+img {
+	max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+	margin: 0;
+}
+
 body {
 	font-family: 'Roboto', sans-serif;
 
@@ -32,6 +48,61 @@ body {
 	justify-content: center;
 
 	min-height: 100dvh;
+
+	background-color: var(--clr-charcoal-grey);
+	color: var(--clr-dark-slate-grey);
+}
+
+.signup-section {
+	display: flex;
+	gap: 2rem;
+
+	padding: 1.4rem;
+
+	width: 50rem;
+
+	background-color: var(--clr-white);
+
+	border-radius: 30px;
+}
+
+/*** Signup Main Content ***/
+
+.signup-main-content {
+	display: flex;
+	flex-direction: column;
+
+	width: 50%;
+}
+
+.signup-main-content > h1 {
+	font-size: 3.4rem;
+}
+
+/*** Signup Image ***/
+
+.signup-main-picutre {
+	width: 50%;
+}
+
+/*** Buttons ***/
+
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 100%;
+
+	padding: 1rem;
+
+	background-color: var(--clr-dark-slate-grey);
+	color: var(--clr-white);
+
+	font-weight: 700;
+
+	border-radius: 6px;
+	border: none;
 }
 
 /*** Success Message ***/
