@@ -139,6 +139,10 @@ label {
 	margin-bottom: 0.4rem;
 }
 
+.form-email-container:has(:not(:focus):invalid) > .error-message {
+	display: block;
+}
+
 .error-message {
 	font-size: 0.8rem;
 	color: var(--clr-tomato);
