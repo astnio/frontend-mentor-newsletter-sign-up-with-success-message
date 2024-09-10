@@ -33,3 +33,9 @@ body {
 
 	min-height: 100dvh;
 }
+
+/*** Success Message ***/
+
+.success-message {
+	display: none;
+}
