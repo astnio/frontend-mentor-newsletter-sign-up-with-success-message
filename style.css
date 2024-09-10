@@ -141,7 +141,7 @@ label {
 	margin-bottom: 0.4rem;
 }
 
-.form-email-container:has(:not(:focus):invalid) > .error-message {
+.form-email-container:has(:user-invalid) > .error-message {
 	display: block;
 }
 
@@ -163,7 +163,7 @@ input::placeholder {
 	color: var(--clr-grey);
 }
 
-input:not(:focus):invalid {
+input:user-invalid {
 	background-color: rgba(250, 128, 114, 0.3);
 	border-color: var(--clr-tomato);
 	color: var(--clr-tomato);
