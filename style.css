@@ -71,6 +71,9 @@ body {
 .signup-main-content {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
+
+	gap: 1.6rem;
 
 	width: 50%;
 }
@@ -83,6 +86,32 @@ body {
 
 .signup-main-picutre {
 	width: 50%;
+}
+
+/*** Form ***/
+
+#signup-form {
+	display: flex;
+	flex-direction: column;
+
+	gap: 1rem;
+}
+
+label {
+	font-size: 0.8rem;
+	font-weight: 700;
+	margin-bottom: 0.4rem;
+}
+
+input {
+	border: 1px solid var(--clr-grey);
+	border-radius: 6px;
+	padding: 1rem;
+}
+
+.form-email-container {
+	display: flex;
+	flex-direction: column;
 }
 
 /*** Buttons ***/
