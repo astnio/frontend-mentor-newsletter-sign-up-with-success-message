@@ -163,6 +163,11 @@ input::placeholder {
 	color: var(--clr-grey);
 }
 
+input:user-invalid::placeholder {
+	color: var(--clr-tomato);
+	opacity: 50%;
+}
+
 input:user-invalid {
 	background-color: rgba(250, 128, 114, 0.3);
 	border-color: var(--clr-tomato);
@@ -208,7 +213,7 @@ input:user-invalid {
 }
 
 .button:hover {
-	box-shadow: 0 0 12px 10px var(--clr-btn-shadow);
+	box-shadow: 0 8px 8px 3px var(--clr-btn-shadow);
 	cursor: pointer;
 }
 
