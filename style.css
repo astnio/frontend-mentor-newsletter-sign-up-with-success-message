@@ -264,29 +264,25 @@ main {
 	overflow: hidden;
 }
 
-/*** NOTE: Remove when done! ***/
 .signup-section {
 	flex-shrink: 0;
 	position: absolute;
 	top: 25%;
 	left: 50%;
+
 	transform: translateX(-50%);
-	/* transform: translateX(-200vw); */
 
 	margin-block: auto;
 
-	transition: transform, 0.5s, ease-in-out;
-
-	/* display: none; */
+	transition: transform 1s ease-in-out;
 }
 
 .success-message {
 	position: absolute;
 	top: 25%;
 	left: 50%;
-	transform: translateX(-50%);
 
-	transform: translateX(200vw);
+	transform: translateX(200%);
 
 	display: flex;
 	flex-direction: column;
@@ -302,9 +298,7 @@ main {
 
 	border-radius: 30px;
 
-	transition: transform, 0.5s, ease-in-out;
-
-	/* display: none; */
+	transition: transform 1s ease-in-out;
 }
 
 .success-message-image {
@@ -322,13 +316,30 @@ main {
 /*** Mobile Design ***/
 
 @media screen and (max-width: 900px) {
+	body {
+		background-color: var(--clr-white);
+	}
+
 	.signup-section {
 		flex-direction: column-reverse;
 		max-width: 340px;
 		border-radius: 0;
+
+		margin: 0;
+
+		top: 1rem;
 	}
 
 	.signup-main-content {
 		padding: 0;
+	}
+
+	.success-message {
+		min-height: 90dvh;
+		top: 1rem;
+	}
+
+	#btn-dismiss-success-message {
+		margin-top: auto;
 	}
 }

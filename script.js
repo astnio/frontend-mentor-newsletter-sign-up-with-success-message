@@ -13,7 +13,7 @@ signupForm.addEventListener('submit', (e) => {
 	const userEmail = e.target[0].value;
 	userEmailLabel.innerText = userEmail;
 
-	signupSection.style.transform = 'translateX(-200vw)';
+	signupSection.style.transform = 'translateX(-400%)';
 	successMessageSection.style.transform = 'translateX(-50%)';
 });
 
