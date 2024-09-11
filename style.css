@@ -256,8 +256,36 @@ input:user-invalid {
 
 /*** Success Message ***/
 
-.success-message {
+/*** NOTE: Remove when done! ***/
+.signup-section {
 	display: none;
+}
+
+.success-message {
+	/* display: none; */
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+
+	padding: 3rem;
+
+	max-width: 30rem;
+
+	background-color: var(--clr-white);
+
+	border-radius: 30px;
+}
+
+.success-message-image {
+	max-width: 4rem;
+}
+
+.success-message > h2 {
+	font-size: 2.8rem;
+}
+
+#user-email {
+	font-weight: 700;
 }
 
 /*** Mobile Design ***/

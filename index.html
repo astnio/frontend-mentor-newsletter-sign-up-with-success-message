@@ -78,12 +78,23 @@
 
 			<!-- Success message start -->
 			<div class="success-message">
+				<img
+					class="success-message-image"
+					src="./assets/images/icon-list.svg"
+					alt=""
+				/>
 				<h2>Thanks for subscribing!</h2>
 				<p>
-					A confirmation email has been sent to ash@loremcompany.com. Please
-					open it and click the button inside to confirm your subscription.
+					A confirmation email has been sent to
+					<span id="user-email">user@example.com</span>. Please open it and
+					click the button inside to confirm your subscription.
 				</p>
-				<button>Dismiss message</button>
+				<button
+					id="btn-dismiss-success-message"
+					class="button"
+				>
+					Dismiss message
+				</button>
 			</div>
 
 			<!-- Success message end -->
