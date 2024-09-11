@@ -1,6 +1,8 @@
+const signupSection = document.getElementById('signup-section');
 const signupForm = document.getElementById('signup-form');
 const emailInput = document.getElementById('email');
 
+const successMessageSection = document.getElementById('success-message');
 const dismissSuccessMessageButton = document.getElementById(
 	'btn-dismiss-success-message'
 );
@@ -11,19 +13,9 @@ signupForm.addEventListener('submit', (e) => {
 	const userEmail = e.target[0].value;
 	userEmailLabel.innerText = userEmail;
 
-	if (!emailInput.validity.valid) {
-		emailInput.classList.add('invalid');
-		console.log('Input invalid!');
-	} else {
-		emailInput.classList.remove('invalid');
-		console.log('Input valid!');
-	}
+	signupSection.style.transform = 'translateX(-200vw)';
+	successMessageSection.style.transform = 'translateX(-50%)';
 });
-
-// emailInput.addEventListener('input', () => {
-// 	emailInput.classList.remove('invalid');
-// 	console.log('Input made!');
-// });
 
 dismissSuccessMessageButton.addEventListener('click', () => {
 	alert('Message dismissed.');

@@ -261,6 +261,7 @@ main {
 	position: relative;
 	min-height: 100dvh;
 	width: 100%;
+	overflow: hidden;
 }
 
 /*** NOTE: Remove when done! ***/
@@ -274,7 +275,9 @@ main {
 
 	margin-block: auto;
 
-	display: none;
+	transition: transform, 0.5s, ease-in-out;
+
+	/* display: none; */
 }
 
 .success-message {
@@ -282,6 +285,8 @@ main {
 	top: 25%;
 	left: 50%;
 	transform: translateX(-50%);
+
+	transform: translateX(200vw);
 
 	display: flex;
 	flex-direction: column;
@@ -296,6 +301,9 @@ main {
 	background-color: var(--clr-white);
 
 	border-radius: 30px;
+
+	transition: transform, 0.5s, ease-in-out;
+
 	/* display: none; */
 }
 
